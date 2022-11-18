@@ -1,0 +1,53 @@
+.App-header {
+  background-color: white;
+}
+
+.main-nu-kenzie {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.sec-first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.sec-first > button {
+  position: relative;
+  left: -7%;
+}
+
+.first-nu-div h1 {
+  margin: -14px 0px;
+}
+
+.second-nu-div {
+  width: 319px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.second-nu-div > span {
+  font-size: 16px;
+}
+.nu-span {
+  color: #fd377e;
+}
+
+.nukenzie-btn {
+  width: 250px;
+  height: 48px;
+  border-radius: 6px;
+  background-color: #fd377e;
+  border: 1px solid #fd377e;
+  color: white;
+  cursor: pointer;
+}

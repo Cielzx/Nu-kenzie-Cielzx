@@ -1,0 +1,55 @@
+.main-dash {
+  background-color: white;
+  display: flex;
+  gap: 300px;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: calc(5px + 2vmin);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 168px;
+}
+
+header > h1 {
+  font-size: 25px;
+}
+.spn-head {
+  color: #fd377e;
+}
+
+.btn-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-button:hover {
+  background-color: #fd377e;
+  border: 1px solid #fd377e;
+  color: white;
+}
+
+.total-value {
+  width: 363px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-value span {
+  color: #343a40;
+}
+
+.total-value p {
+  color: #fd377e;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 20px;
+}

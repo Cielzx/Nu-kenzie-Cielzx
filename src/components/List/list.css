@@ -1,0 +1,69 @@
+.list-div {
+  display: flex;
+  gap: 144px;
+  align-items: center;
+}
+
+.list-div button {
+  width: 69px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.list-div button:hover {
+  background-color: #fd377e;
+  border: 2px solid #fd377e;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+ul {
+  width: 550px;
+  height: 400px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+ul li {
+  display: flex;
+  /* gap: 132px; */
+  border-left: 4px solid #03b898;
+  border-radius: 8px;
+  width: 443px;
+  justify-content: space-between;
+}
+
+.list-f-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-s-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 54px;
+}
+
+.list-btn {
+  background-image: url("../../assets/img/trash\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
