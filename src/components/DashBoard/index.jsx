@@ -15,6 +15,20 @@ const DashBoard = ({
     setLogged(true);
   };
 
+  const values = () => {
+    const reduc = listTransiction
+      .reduce((acumulador, valorAtual) => {
+        if (valorAtual.type === "Saída") {
+          return acumulador - valorAtual.value;
+        } else {
+          return acumulador + valorAtual.value;
+        }
+      }, 0)
+      .toFixed(2);
+    console.log(reduc);
+    return reduc;
+  };
+
   return (
     <div className="mobile-div">
       <header>
@@ -36,18 +50,7 @@ const DashBoard = ({
                 <span>O valor se refere ao saldo</span>
               </div>
 
-              <p>
-                $
-                {listTransiction
-                  .reduce((acumulador, valorAtual) => {
-                    if (listTransiction.type === "Saìda") {
-                      return acumulador - valorAtual.value;
-                    } else {
-                      return acumulador + valorAtual.value;
-                    }
-                  }, 0)
-                  .toFixed(2)}
-              </p>
+              <p>$ {values()}</p>
             </div>
           ) : (
             <></>
