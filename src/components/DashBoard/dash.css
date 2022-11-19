@@ -53,3 +53,55 @@ header > h1 {
   line-height: 20px;
   font-size: 20px;
 }
+
+@media (max-width: 720px) {
+  .mobile-div {
+    width: 82vh;
+    height: 100vh;
+  }
+  .main-dash {
+    background-color: white;
+    display: flex;
+    /* height: 94vh; */
+    /* width: 100vw; */
+    gap: 127px;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: calc(5px + 2vmin);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-sect {
+    width: 415px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 43px;
+  }
+
+  ul {
+    width: 437px;
+    height: 186px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+    overflow-x: scroll;
+  }
+
+  ul li {
+    display: flex;
+    height: 94px;
+    /* gap: 132px; */
+    border-left: 4px solid #03b898;
+    border-radius: 8px;
+    width: 443px;
+    justify-content: space-between;
+  }
+}

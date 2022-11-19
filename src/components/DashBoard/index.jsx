@@ -16,7 +16,7 @@ const DashBoard = ({
   };
 
   return (
-    <div>
+    <div className="mobile-div">
       <header>
         <h1>
           <span className="spn-head">Nu</span> Kenzie
@@ -38,9 +38,15 @@ const DashBoard = ({
 
               <p>
                 $
-                {listTransiction.reduce((acumulador, valorAtual) => {
-                  return acumulador + valorAtual.value;
-                }, 0)}
+                {listTransiction
+                  .reduce((acumulador, valorAtual) => {
+                    if (listTransiction.type === "Saìda") {
+                      return acumulador - valorAtual.value;
+                    } else {
+                      return acumulador + valorAtual.value;
+                    }
+                  }, 0)
+                  .toFixed(2)}
               </p>
             </div>
           ) : (
@@ -48,7 +54,7 @@ const DashBoard = ({
           )}
         </section>
 
-        <section>
+        <section className="mobile-sect">
           <div className="list-div">
             <h5>Resumo Financeiro</h5>
             <div className="buttons">

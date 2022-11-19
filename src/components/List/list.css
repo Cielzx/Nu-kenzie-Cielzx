@@ -36,10 +36,18 @@ ul {
 ul::-webkit-scrollbar {
   display: none;
 }
-ul li {
+.list-entries {
   display: flex;
   /* gap: 132px; */
   border-left: 4px solid #03b898;
+  border-radius: 8px;
+  width: 443px;
+  justify-content: space-between;
+}
+.list-exit {
+  display: flex;
+  /* gap: 132px; */
+  border-left: 4px solid #b80303;
   border-radius: 8px;
   width: 443px;
   justify-content: space-between;

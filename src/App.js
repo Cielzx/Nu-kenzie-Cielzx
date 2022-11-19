@@ -12,8 +12,6 @@ function App() {
   const filter = listTransiction.filter((list) =>
     filtered === "todos" ? list : list.type === filtered
   );
-
-  console.log(filtered);
   // console.log(filter);
 
   const addList = (newlist) => {
@@ -33,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="mobile-div">
         {logged ? (
           <LandPage setLogged={setLogged} listTransiction={listTransiction} />
         ) : (
